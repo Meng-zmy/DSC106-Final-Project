@@ -1,0 +1,103 @@
+<html>  
+<head>  
+<script type="text/javascript" src="app.js">
+    </script>
+<link rel="stylesheet" href="styles.css">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+</head>
+<body onload=finalproject()> 
+
+<div>
+<h2 class="section">Final Project</h2>
+
+<div>
+<h3>Plot A:</h3>
+    <p>Explore trends of infections by month by using a linked scatter plot.</p>
+    <p>1. Keys: Date
+    2. Values: Number of COVID cases
+    3. Color scheme: Tooltip has dark gray background for easy readability.
+    4. Marks: Points, Lines
+    5. Channels: Positions
+    </p>
+    <div id="radio_q1" class="center_plot">
+        <input type="radio" id="q1_All" name="year" value="All" checked="checked">
+        <label for="All">All</label>
+        <input type="radio" id="q1_2020" name="year" value="2020">
+        <label for="2020">2020</label>
+        <input type="radio" id="q1_2021" name="year" value="2021">
+        <label for="2021">2021</label>
+        <input type="radio" id="q1_2022" name="year" value="2022">
+        <label for="2022">2022</label>
+    </div>
+    <div id="q1_plot" class="center_plot">
+    </div>
+</div>
+    
+<div>
+<h3>Plot B:</h3>
+    <p>Explore relationship between age and weeks until tested positive by using a scatter plot. </p>
+    <p>1. Keys: Age, Weeks Until Tested Positive
+    2. Values: N/A
+    3. Color scheme: N/A
+    4. Marks: Points
+    5. Channels: Positions
+    </p>
+    <div id="q2_plot" class="center_plot">
+    </div>
+</div>    
+
+<div>
+<h3>Plot C:</h3>
+    <p>Explore difference of covid deaths for symptomatic and asymptomatic by gender using a stacked bar chart.</p>
+    <p>
+        1. Keys: gender(male and female), symptom(symptomatic and asymptomatic)
+        2. Values: number of deaths
+        3. Color scheme: We choose the sequential colormap, the Symptomatic to be darker and Asymptomatic to be lighter.
+        4. Marks: lines and areas
+        5. Channels: size, position, and color
+
+    </p>
+    <div id="q4_plot" class="center_plot">
+    </div>
+    <div id="radio_4" class="center_plot">
+        <input type="radio" id="q4_2020" name="year2" value="2020" checked="checked">
+        <label for="2020">2020</label>
+        <input type="radio" id="q4_2021" name="year2" value="2021">
+        <label for="2021">2021</label>
+        <input type="radio" id="q4_2022" name="year2" value="2022">
+        <label for="2022">2022</label>
+    </div>
+</div>    
+
+<div>
+<h3>Plot D:</h3>
+    <p>Show distribution of total number of deaths and hospitalized in each month by using boxplot.</p>
+    <p>
+        1. Keys: status(death and hospitalize)
+        2. Values: the total number of death or hospitalized in each month
+        3. Color scheme: We choose the hue, the dead use red and hospitalized use orange.
+        4. Marks: lines and areas
+        5. Channels: size, position, and color
+    </p>
+    <div id="q5_plot" class="center_plot">
+    </div>
+</div>    
+
+<div>
+<h3>Plot E:</h3>
+    <p>Show variation of total number of hospitalized for two genders by using streamgraph.</p>
+    <p>
+        1. Keys: date, gender(male and female)
+        2. Values: number of hospitalized
+        3. Color scheme: We choose the hue. We directly represent the male and female with purple and pink. It will be easy to
+        distinguish the two sexs.
+        4. Marks: areas
+        5. Channels: size, position, and color
+    </p>
+    <div id="q6_plot" class="center_plot">
+    </div>
+</div>
+    
+</body>  
+</html>  
